@@ -1,6 +1,6 @@
 package com.newlondonweb.tabbedfragmentdemo.data.weather
 
-data class weather(
+data class Weather(
     val currently: Currently,
     val daily: Daily,
     val flags: Flags,

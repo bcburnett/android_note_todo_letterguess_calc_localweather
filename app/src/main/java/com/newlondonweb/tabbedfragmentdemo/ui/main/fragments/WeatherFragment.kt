@@ -18,7 +18,7 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.gson.Gson
 import com.newlondonweb.tabbedfragmentdemo.R.layout.fragment_weather
-import com.newlondonweb.tabbedfragmentdemo.data.weather.weather
+import com.newlondonweb.tabbedfragmentdemo.data.weather.Weather
 import kotlinx.android.synthetic.main.fragment_weather.*
 import java.util.*
 
@@ -75,7 +75,7 @@ class WeatherFragment : Fragment() {
                     null,
                     {
                         doDisplay(
-                            Gson().fromJson(it.toString(), weather::class.java),
+                            Gson().fromJson(it.toString(), Weather::class.java),
                             location
                         )
                     },
@@ -88,7 +88,7 @@ class WeatherFragment : Fragment() {
     }
 
 
-    private fun doDisplay(json: weather, location: Location) {
+    private fun doDisplay(json: Weather, location: Location) {
         val unixSeconds: Long = json.currently.time.toLong()
         val date = Date(unixSeconds * 1000L)
         val sdfDate = java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss z", Locale.US)
