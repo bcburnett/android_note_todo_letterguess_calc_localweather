@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Tabbed Fragment Demo</string>
+    <string name="tab_text_1">Note</string>
+    <string name="tab_text_2">Game</string>
+    <string name="tab_text_3">Calc</string>
+    <string name="tab_text_4">Todo</string>
+    <string name="tab_text_6">Temp</string>
+    <string name="tab_text_5">Util</string>
+    <string name="f3databuttontext">Add Note</string>
+    <string name="Title">Title</string>
+    <string name="Details">Details</string>
+    <string name="Priority">Priority</string>
+    <string name="update">Update Record</string>
+    <string name="delete">Delete Record</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="D">D</string>
+    <string name="E">E</string>
+    <string name="F">F</string>
+    <string name="G">G</string>
+    <string name="H">H</string>
+    <string name="I">I</string>
+    <string name="J">J</string>
+    <string name="K">K</string>
+    <string name="L">L</string>
+    <string name="M">M</string>
+    <string name="N">N</string>
+    <string name="O">O</string>
+    <string name="P">P</string>
+    <string name="Q">Q</string>
+    <string name="R">R</string>
+    <string name="S">S</string>
+    <string name="T">T</string>
+    <string name="U">U</string>
+    <string name="V">V</string>
+    <string name="W">W</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Z">Z</string>
+    <string name="RESET">Reset</string>
+    <string name="HMImage">smiley face to show losses</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="take_pic">Take Picture</string>
+    <string name="close">Close</string>
+    <string name="call">Make Call</string>
+    <string name="city">Current weather conditions at </string>
+    <string name="darksky">More at DarkSky.net</string>
+    <string name="busmap">Bus Map</string>
+    <string name="musicPlayer">Music</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imageGallery">Image Gallery</string>
+    <string name="email">Launch Gmail</string>
+    <string name="ss"><![CDATA[Stop & Shop]]></string>
+    <string name="record">Record</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#61C608</color>
+    <color name="colorPrimaryDark">#091E02</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="nlw50grey">#25000000</color>
+    <color name="nlwlight">#A1C1BC</color>
+    <color name="nlwhighlight">#FFEB3B</color>
+</resources>

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/home/brian/.gradle/caches/transforms-2/files-2.1/6cba46dbb4d137753833c292f3755a5a/appcompat-1.1.0-rc01/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}
