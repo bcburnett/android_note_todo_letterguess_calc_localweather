@@ -124,6 +124,10 @@
         "source": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/res/drawable/s2.webp"
     },
     {
+        "merged": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/res/merged/debug/drawable_background.webp.flat",
+        "source": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/res/drawable/background.webp"
+    },
+    {
         "merged": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },

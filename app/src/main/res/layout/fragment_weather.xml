@@ -5,7 +5,6 @@
     android:id="@+id/cl_Weather"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     tools:context=".ui.main.fragments.WeatherFragment">
 
     <TextView

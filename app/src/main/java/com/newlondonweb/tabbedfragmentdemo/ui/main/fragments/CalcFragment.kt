@@ -17,9 +17,7 @@ import kotlinx.android.synthetic.main.frag3_fragment.*
 class CalcFragment : Fragment() {
 
 
-    companion object {
-        fun newInstance() = CalcFragment()
-    }
+    companion object {fun newInstance() = CalcFragment()}
 
     private val vm: CalcViewModel by lazy {this.activity.let { ViewModelProvider(it!!).get(CalcViewModel::class.java)}}
 

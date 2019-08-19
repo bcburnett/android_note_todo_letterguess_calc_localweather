@@ -5,8 +5,7 @@
     android:id="@+id/cl_camFrag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    tools:context=".ui.main.fragments.CameraFragment">
+    tools:context=".ui.main.fragments.UtilityFragment">
 
     <Button
         android:id="@+id/btn_Record"

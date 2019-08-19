@@ -51,13 +51,11 @@ class NoteViewModel(application: Application) : AndroidViewModel(application) {
         myNote.value=currentNote
     }
 
-
     init {
     doTimer()
     }
 
     fun doTimer(){
-               //Clock display
         runTimer=true
         val mainHandler = Handler(Looper.getMainLooper())
         mainHandler.post(object : Runnable {
@@ -72,13 +70,5 @@ class NoteViewModel(application: Application) : AndroidViewModel(application) {
         })
     }
 
-
     fun stopTimer(){runTimer=false}
-
-
-
-
-
-
-
 }

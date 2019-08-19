@@ -17,15 +17,15 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager) :
     FragmentPagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
     override fun getItem(position: Int): Fragment {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a Fragment.
+        // getItem is called when the position changes to instantiate the fragment for the given page.
+        // Returns a Fragment instance.
         return when (position){
             0 -> NoteFragment.newInstance()
             1 -> WordGuessFragment.newInstance()
             2 -> CalcFragment.newInstance()
             3->ToDoFrag.newInstance()
             4->WeatherFragment.newInstance()
-            else -> CameraFragment.newInstance()
+            else -> UtilityFragment.newInstance()
         }
     }
 

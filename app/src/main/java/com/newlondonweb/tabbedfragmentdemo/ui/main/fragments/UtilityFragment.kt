@@ -20,10 +20,10 @@ import kotlinx.android.synthetic.main.utility_fragment.*
 
 private const val REQUEST_IMAGE_CAPTURE = 1
 
-class CameraFragment : Fragment(), LifecycleOwner {
+class UtilityFragment : Fragment(), LifecycleOwner {
 
     companion object {
-        fun newInstance() = CameraFragment()
+        fun newInstance() = UtilityFragment()
     }
 
     private val vm: UtilityViewModel by lazy {
