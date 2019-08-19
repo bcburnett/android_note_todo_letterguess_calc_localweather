@@ -57,7 +57,6 @@ class ToDoFrag : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        vm.frag1Data.observe(this, Observer { tv_todo.text = it.toString() })
 
         val recyclerView = rv_Todos
         recyclerView.layoutManager = GridLayoutManager(this.context, 1)
@@ -88,7 +87,7 @@ class ToDoFrag : Fragment() {
     fun editTodo(currentNote: Todo) {
 
         window.dismiss()
-        val view = layoutInflater.inflate(R.layout.layout_popup, null)
+        val view = layoutInflater.inflate(R.layout.layout_popup, this.frameLayout,false)
         view.et_title.setText(currentNote.title)
         view.et_details.setText(currentNote.description)
         view.et_priority.setText(currentNote.priority.toString())
@@ -129,7 +128,7 @@ class ToDoFrag : Fragment() {
     private fun newTodo() {
 
         window.dismiss()
-        val view = layoutInflater.inflate(R.layout.layout_add, null)
+        val view = layoutInflater.inflate(R.layout.layout_add,this.frameLayout,false)
         view.btn_Add.setOnClickListener {
             vm.viewModelScope.launch {
                 vm.insert(
@@ -148,13 +147,4 @@ class ToDoFrag : Fragment() {
 
     }
 
-    override fun onResume() {
-        super.onResume()
-        vm.doTimer()
-    }
-
-    override fun onPause() {
-        super.onStop()
-        vm.stopTimer()
-    }
 }

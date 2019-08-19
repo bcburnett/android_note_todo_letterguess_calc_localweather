@@ -74,7 +74,6 @@ class NoteFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        vm.frag1Data.observe(this, Observer { tv_f1.text = it.toString() })
         val recyclerView = rv_Notes
 
         recyclerView.layoutManager = GridLayoutManager(this.context, 1)
@@ -113,7 +112,7 @@ class NoteFragment : Fragment() {
 
     fun editNote(currentNote: Note) {
         window.dismiss()
-        val view = layoutInflater.inflate(R.layout.layout_popup, null)
+        val view = layoutInflater.inflate(R.layout.layout_popup, this.constraintlayout,false)
         view.et_title1.setText(currentNote.title)
         view.et_details1.setText(currentNote.description)
         view.et_priority1.setText(currentNote.priority.toString())
@@ -139,7 +138,7 @@ class NoteFragment : Fragment() {
 
     private fun newNote() {
         window.dismiss()
-        val view = layoutInflater.inflate(R.layout.layout_add, null)
+        val view = layoutInflater.inflate(R.layout.layout_add, this.constraintlayout,false)
         view.btn_Add.setOnClickListener {
             vm.viewModelScope.launch {
                 vm.insert(
@@ -199,25 +198,14 @@ class NoteFragment : Fragment() {
     fun showImage(currentNote: Note) {
         if (currentNote.image == "") return
         window.dismiss()
-        val view = layoutInflater.inflate(R.layout.picture_view, null)
+        val view = layoutInflater.inflate(R.layout.picture_view, this.constraintlayout,false)
         GetBitmap(
             view.iv_PictureView,
             currentNote.image
         ).execute()
         view.iv_PictureView.setOnClickListener { window.dismiss() }
         window.contentView = view
-        window.showAsDropDown(tv_f1)
+        window.showAsDropDown(guideline)
     }
-
-    override fun onResume() {
-        super.onResume()
-        vm.doTimer()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        vm.stopTimer()
-    }
-
 
 }

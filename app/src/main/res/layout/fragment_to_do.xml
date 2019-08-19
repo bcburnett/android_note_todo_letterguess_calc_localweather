@@ -7,17 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.fragments.ToDoFrag">
 
-    <TextView
-        android:id="@+id/tv_todo"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/iv_AddTodo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_Todos"
         android:layout_width="0dp"
@@ -26,18 +15,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_todo"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
         tools:listitem="@layout/todo_item" />
 
     <ImageView
         android:id="@+id/iv_AddTodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@android:drawable/ic_input_add"
-        android:tint="@color/colorPrimary"
+        android:tint="@color/nlw75grey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"

@@ -720,6 +720,7 @@ color mtrl_textinput_disabled_color
 color mtrl_textinput_filled_box_default_background_color
 color mtrl_textinput_hovered_box_stroke_color
 color nlw50grey
+color nlw75grey
 color nlwhighlight
 color nlwlight
 color notification_action_color_filter
@@ -1476,8 +1477,6 @@ id tv_TodoNote
 id tv_TodoPriority
 id tv_TodoTitle
 id tv_Used
-id tv_f1
-id tv_todo
 id unchecked
 id uniform
 id unlabeled

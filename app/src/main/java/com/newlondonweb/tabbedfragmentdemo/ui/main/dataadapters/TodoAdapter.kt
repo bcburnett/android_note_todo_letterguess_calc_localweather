@@ -29,14 +29,21 @@ class TodoAdapter(
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
         val currentTodo = todos[position]
         holder.todoTitle.text = currentTodo.title
-        if(currentTodo.done)holder.todoTitle.setBackgroundResource(R.color.colorPrimary) else holder.todoTitle.setBackgroundResource(R.color.nlwhighlight)
         holder.todoNote.text = currentTodo.description
         holder.todoPriority.text = currentTodo.priority.toString()
-        if(currentTodo.done) holder.todoDone.setImageResource(R.drawable.ic_check_box_black_24dp) else holder.todoDone.setImageResource(R.drawable.ic_check_box_outline_blank_black_24dp)
         holder.todoDelete.setOnClickListener { frag.delTodo(currentTodo) }
         holder.todoEdit.setOnClickListener { frag.editTodo(currentTodo) }
         holder.todoDone.setOnClickListener { frag.todoToggle(currentTodo) }
-
+        when {
+            currentTodo.done -> {
+                holder.todoTitle.setBackgroundResource(R.color.nlw50grey )
+                holder.todoDone.setImageResource(R.drawable.ic_check_box_black_24dp)
+            }
+            else -> {
+                holder.todoTitle.setBackgroundResource(R.color.nlw75grey)
+                holder.todoDone.setImageResource(R.drawable.ic_check_box_outline_blank_black_24dp)
+            }
+        }
     }
 
     fun setTodos(todos: List<Todo>) {
