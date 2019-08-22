@@ -24,8 +24,11 @@ private val REQUIRED_PERMISSIONS = arrayOf(
     Manifest.permission.ACCESS_WIFI_STATE
 )
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        // set initial view and initialize page adapter
         setContentView(R.layout.activity_main)
         
         tabs.setupWithViewPager(view_pager.apply {adapter =
@@ -33,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 this.context,
                 supportFragmentManager
             )
-        },true)
+        },false)
 
         // Request permissions
         if (!allPermissionsGranted()) {

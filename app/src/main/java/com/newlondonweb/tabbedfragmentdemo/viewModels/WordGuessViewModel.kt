@@ -66,7 +66,8 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
 
     //////////////////PUBLIC FUNCTIONS//////////////////
     //The user has entered a letter guess
-    fun doCheck(myguess: Button) {
+    fun doCheck(myguess: Button):Boolean {
+        var b = false
         disabled.value?.add(myguess)
         val guess = myguess.tag.toString()
         //update used letters
@@ -87,6 +88,7 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
         //check for wrong guess
         when {
             !secretPhrase.contains(guess) -> wrongGuesses.value = wrongGuesses.value!! + 1
+            else -> b=true
         }
 
         //check if we lost
@@ -96,6 +98,8 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
 
         //generate the displayed phrase
         generatePhraseString()
+
+        return b
     }
 
     //re/initialize the game

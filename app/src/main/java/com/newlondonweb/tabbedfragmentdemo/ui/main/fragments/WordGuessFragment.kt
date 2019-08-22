@@ -1,5 +1,6 @@
 package com.newlondonweb.tabbedfragmentdemo.ui.main.fragments
 
+import android.graphics.Color
 import android.os.Bundle
 import android.speech.tts.TextToSpeech
 import android.view.LayoutInflater
@@ -23,8 +24,7 @@ class WordGuessFragment : Fragment() {
     companion object {
         fun newInstance() = WordGuessFragment()
     }
-
-    private var myPhrase = ""
+    private var speach = true
     private lateinit var mtts: TextToSpeech
 
     private val vm: WordGuessViewModel by lazy {
@@ -48,6 +48,12 @@ class WordGuessFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+        mtts = TextToSpeech(context, TextToSpeech.OnInitListener {
+            if (it != TextToSpeech.ERROR) {
+                mtts.language = Locale.US
+            }
+        })
+
         //Display the game image
         vm.currentWrongGuesses.observe(this, Observer { iv_Image.setImageResource(image[it]) })
 
@@ -56,21 +62,15 @@ class WordGuessFragment : Fragment() {
             tv_Phrase.text = it
             val myit = it
             if(myit.contains("_"))return@Observer
-            mtts.speak(
+            if(speach)mtts.speak(
                 myit, TextToSpeech.QUEUE_ADD, null, null
             )
-        })
-
-        mtts = TextToSpeech(context, TextToSpeech.OnInitListener {
-            if (it != TextToSpeech.ERROR) {
-                mtts.language = Locale.US
-            }
         })
 
         //display the category
         vm.currentCategory.observe(this, Observer {
             tv_Category.text = it
-            mtts.speak(
+            if(speach)mtts.speak(
                 it, TextToSpeech.QUEUE_FLUSH, null, null
             )
         })
@@ -85,7 +85,7 @@ class WordGuessFragment : Fragment() {
                 WON -> {
                     keyboardActive = false
 
-                    mtts.speak(
+                    if(speach)mtts.speak(
                         "Congratulations, You Won!", TextToSpeech.QUEUE_ADD, null, null
                     )
 
@@ -93,7 +93,7 @@ class WordGuessFragment : Fragment() {
                 }
                 LOST -> {
                     keyboardActive = false
-                    mtts.speak(
+                    if(speach)mtts.speak(
                         "Sorry, You Lost.", TextToSpeech.QUEUE_ADD, null, null
                     )
                 }
@@ -103,7 +103,9 @@ class WordGuessFragment : Fragment() {
         keyboard.children.forEach { it.setOnClickListener(this@WordGuessFragment::keyboardInput) }
 
         btn_Reset.setOnClickListener {
-            keyboard.children.forEach { it.isEnabled = true }
+            keyboard.children.forEach {
+                it.isEnabled = true
+                (it as Button).setTextColor(Color.BLACK)}
             vm.wordGuessInit()
         }
 
@@ -111,21 +113,30 @@ class WordGuessFragment : Fragment() {
             it.forEach { button ->
                 keyboard.children.forEach { childButton ->
                     when {
-                        childButton.tag == button.tag -> childButton.isEnabled = false
+                        childButton.tag == button.tag -> {
+                            childButton.isEnabled = false
+                            (childButton as Button).setTextColor(button.currentTextColor)
+                        }
                     }
                 }
             }
         })
+
+        iv_speach.setOnClickListener {
+            speach = !speach
+            if(speach) iv_speach.setImageResource(ic_volume_up_black_24dp) else iv_speach.setImageResource(
+                ic_volume_off_black_24dp)
+        }
     }
 
     //interpret letter buttons press and send to main game function
     private fun keyboardInput(view: View) {
         when {
             keyboardActive -> {
-                mtts.speak(
+                if(speach)mtts.speak(
                     view.tag.toString(), TextToSpeech.QUEUE_ADD, null, null
                 )
-                vm.doCheck((view as Button).apply { isEnabled = false })
+                if(vm.doCheck((view as Button).apply { isEnabled = false })) view.setTextColor(Color.argb(75,0,180,0)) else view.setTextColor(Color.argb(70,255,0,0))
             }
         }
     }

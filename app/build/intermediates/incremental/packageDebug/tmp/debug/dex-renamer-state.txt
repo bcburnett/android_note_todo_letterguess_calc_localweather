@@ -1,4 +1,4 @@
-#Mon Aug 19 00:02:52 EDT 2019
+#Thu Aug 22 08:46:32 EDT 2019
 base.0=/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

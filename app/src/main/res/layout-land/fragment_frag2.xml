@@ -7,6 +7,14 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.fragments.WordGuessFragment">
 
+    <ImageView
+        android:id="@+id/iv_speach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_volume_up_black_24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/tv_Phrase"
         android:layout_width="0dp"
@@ -81,10 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="@color/nlw50grey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +101,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="V"
             android:text="@string/V"
             app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +114,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="W"
             android:text="@string/W"
             app:layout_constraintStart_toEndOf="@+id/V"
@@ -122,7 +127,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="X"
             android:text="@string/X"
             app:layout_constraintStart_toEndOf="@+id/W"
@@ -135,7 +140,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="Y"
             android:text="@string/Y"
             app:layout_constraintStart_toEndOf="@+id/X"
@@ -148,7 +153,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="Z"
             android:text="@string/Z"
             app:layout_constraintStart_toEndOf="@+id/Y"
@@ -160,7 +165,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:text="@string/RESET"
             app:layout_constraintStart_toEndOf="@+id/Z"
             app:layout_constraintTop_toBottomOf="@+id/T" />
@@ -171,7 +176,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="O"
             android:text="@string/O"
             app:layout_constraintStart_toStartOf="parent"
@@ -184,7 +189,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="P"
             android:text="@string/P"
             app:layout_constraintStart_toEndOf="@+id/O"
@@ -197,7 +202,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="Q"
             android:text="@string/Q"
             app:layout_constraintStart_toEndOf="@+id/P"
@@ -210,7 +215,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="R"
             android:text="@string/R"
             app:layout_constraintStart_toEndOf="@+id/Q"
@@ -223,7 +228,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="S"
             android:text="@string/S"
             app:layout_constraintStart_toEndOf="@+id/R"
@@ -236,7 +241,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="T"
             android:text="@string/T"
             app:layout_constraintStart_toEndOf="@+id/S"
@@ -249,7 +254,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="U"
             android:text="@string/U"
             app:layout_constraintStart_toEndOf="@+id/T"
@@ -261,7 +266,7 @@
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="H"
             android:text="@string/H"
             app:layout_constraintStart_toStartOf="parent"
@@ -274,7 +279,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="I"
             android:text="@string/I"
             app:layout_constraintStart_toEndOf="@+id/H"
@@ -287,7 +292,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="J"
             android:text="@string/J"
             app:layout_constraintStart_toEndOf="@+id/I"
@@ -300,7 +305,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="K"
             android:text="@string/K"
             app:layout_constraintStart_toEndOf="@+id/J"
@@ -313,7 +318,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="L"
             android:text="@string/L"
             app:layout_constraintStart_toEndOf="@+id/K"
@@ -326,7 +331,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="M"
             android:text="@string/M"
             app:layout_constraintStart_toEndOf="@+id/L"
@@ -339,7 +344,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="N"
             android:text="@string/N"
             app:layout_constraintStart_toEndOf="@+id/M"
@@ -350,7 +355,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="A"
             android:text="@string/A"
             app:layout_constraintStart_toStartOf="parent"
@@ -362,7 +367,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="B"
             android:text="@string/B"
             app:layout_constraintStart_toEndOf="@+id/A"
@@ -374,7 +379,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="C"
             android:text="@string/C"
             app:layout_constraintStart_toEndOf="@+id/B"
@@ -386,7 +391,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="D"
             android:text="@string/D"
             app:layout_constraintStart_toEndOf="@+id/C"
@@ -398,7 +403,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="E"
             android:text="@string/E"
             app:layout_constraintStart_toEndOf="@+id/D"
@@ -410,7 +415,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="F"
             android:text="@string/F"
             app:layout_constraintStart_toEndOf="@+id/E"
@@ -422,7 +427,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
 
-            android:backgroundTint="@color/colorPrimary"
+            android:background="@drawable/button"
             android:tag="G"
             android:text="@string/G"
             app:layout_constraintStart_toEndOf="@+id/F"

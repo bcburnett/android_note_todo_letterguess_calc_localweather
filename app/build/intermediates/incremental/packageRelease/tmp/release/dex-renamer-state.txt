@@ -1,4 +1,0 @@
-#Sun Aug 18 00:28:02 EDT 2019
-base.0=/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/dex/release/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

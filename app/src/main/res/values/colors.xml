@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#666565</color>
-    <color name="colorPrimaryDark">#091E02</color>
+    <color name="colorPrimary">#379216</color>
+    <color name="colorPrimaryDark">#2E3A1D</color>
     <color name="colorAccent">#D81B60</color>
     <color name="nlw50grey">#25FFFFFF</color>
     <color name="nlw75grey">#75FFFFFF</color>

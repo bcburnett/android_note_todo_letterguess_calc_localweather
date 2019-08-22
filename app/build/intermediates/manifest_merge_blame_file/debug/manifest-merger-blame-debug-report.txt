@@ -47,7 +47,7 @@
 25        android:allowBackup="true"
 25-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:16:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-26-->[androidx.core:core:1.1.0-rc01] /home/brian/.gradle/caches/transforms-2/files-2.1/f9cc60ae6784826ef8e231662c1058f8/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
+26-->[androidx.core:core:1.1.0-rc01] /home/brian/.gradle/caches/transforms-2/files-2.1/bc50bb9bda5b8a6d628b41cc413e1420/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
 27        android:debuggable="true"
 28        android:hardwareAccelerated="true"
 28-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:22:9-43
@@ -100,51 +100,51 @@
 54        </activity>
 55
 56        <provider
-56-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/ef31577f07120dd73718e81276022cdc/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:25:9-30:43
+56-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:25:9-30:43
 57            android:name="androidx.camera.camera2.impl.Camera2Initializer"
-57-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/ef31577f07120dd73718e81276022cdc/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:26:13-75
+57-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:26:13-75
 58            android:authorities="com.newlondonweb.tabbedfragmentdemo.camerax-init"
-58-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/ef31577f07120dd73718e81276022cdc/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:27:13-64
+58-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:27:13-64
 59            android:exported="false"
-59-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/ef31577f07120dd73718e81276022cdc/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:28:13-37
+59-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:28:13-37
 60            android:initOrder="100"
-60-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/ef31577f07120dd73718e81276022cdc/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:29:13-36
+60-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:29:13-36
 61            android:multiprocess="true" />
-61-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/ef31577f07120dd73718e81276022cdc/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:30:13-40
+61-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:30:13-40
 62
-63        <service
-63-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/03cb78f68c9ab7bef842292c4be1c49d/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
-64            android:name="androidx.room.MultiInstanceInvalidationService"
-64-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/03cb78f68c9ab7bef842292c4be1c49d/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
-65            android:exported="false" />
-65-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/03cb78f68c9ab7bef842292c4be1c49d/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
-66
-67        <activity
-67-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/cfaae9be1926905f642ea957f4b2d0a5/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-68            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-68-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/cfaae9be1926905f642ea957f4b2d0a5/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-69            android:exported="false"
-69-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/cfaae9be1926905f642ea957f4b2d0a5/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-70            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-70-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/cfaae9be1926905f642ea957f4b2d0a5/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+63        <activity
+63-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+64-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+65            android:exported="false"
+65-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+67
+68        <meta-data
+68-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/dd6236fa64966faf26f76a19383ce51c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+69            android:name="com.google.android.gms.version"
+69-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/dd6236fa64966faf26f76a19383ce51c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+70            android:value="@integer/google_play_services_version" />
+70-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/dd6236fa64966faf26f76a19383ce51c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 71
-72        <meta-data
-72-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/fb16ed01c0616d5626025876592cacd7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-73            android:name="com.google.android.gms.version"
-73-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/fb16ed01c0616d5626025876592cacd7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-74            android:value="@integer/google_play_services_version" />
-74-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/fb16ed01c0616d5626025876592cacd7/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+72        <service
+72-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d5a03764163cae7eddad16482bfc6546/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+73            android:name="androidx.room.MultiInstanceInvalidationService"
+73-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d5a03764163cae7eddad16482bfc6546/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+74            android:exported="false" />
+74-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d5a03764163cae7eddad16482bfc6546/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
 75
 76        <provider
-76-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3792003d9673e60303f582697a77e8e3/lifecycle-process-2.2.0-alpha02/AndroidManifest.xml:25:9-29:43
+76-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:25:9-29:43
 77            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-77-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3792003d9673e60303f582697a77e8e3/lifecycle-process-2.2.0-alpha02/AndroidManifest.xml:26:13-79
+77-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:26:13-79
 78            android:authorities="com.newlondonweb.tabbedfragmentdemo.lifecycle-process"
-78-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3792003d9673e60303f582697a77e8e3/lifecycle-process-2.2.0-alpha02/AndroidManifest.xml:27:13-69
+78-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:27:13-69
 79            android:exported="false"
-79-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3792003d9673e60303f582697a77e8e3/lifecycle-process-2.2.0-alpha02/AndroidManifest.xml:28:13-37
+79-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:28:13-37
 80            android:multiprocess="true" />
-80-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3792003d9673e60303f582697a77e8e3/lifecycle-process-2.2.0-alpha02/AndroidManifest.xml:29:13-40
+80-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:29:13-40
 81    </application>
 82
 83</manifest>
