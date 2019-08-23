@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
                     "source": "/home/brian/.gradle/caches/transforms-2/files-2.1/2c6fc9a823c0a777a41ca9737466f9e4/appcompat-1.1.0-rc01/res/values-v16/values-v16.xml",

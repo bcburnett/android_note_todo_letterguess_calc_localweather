@@ -5,7 +5,7 @@
     android:id="@+id/cl_Weather"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".weather.WeatherFragment">
+    tools:context=".sections.weather.WeatherFragment">
 
     <TextView
         android:id="@+id/tv_Date"

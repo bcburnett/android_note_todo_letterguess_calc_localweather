@@ -3,15 +3,20 @@ package com.newlondonweb.tabbedfragmentdemo.data;
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
 import androidx.room.RoomOpenHelper;
+import androidx.room.RoomOpenHelper.Delegate;
 import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
+import androidx.room.util.TableInfo.Column;
+import androidx.room.util.TableInfo.ForeignKey;
+import androidx.room.util.TableInfo.Index;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
-
-import com.newlondonweb.tabbedfragmentdemo.notes.notes.NoteDao;
-import com.newlondonweb.tabbedfragmentdemo.notes.notes.NoteDao_Impl;
-import com.newlondonweb.tabbedfragmentdemo.todo.todo.TodoDao;
-import com.newlondonweb.tabbedfragmentdemo.todo.todo.TodoDao_Impl;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
+import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
+import com.newlondonweb.tabbedfragmentdemo.sections.notes.notes.NoteDao;
+import com.newlondonweb.tabbedfragmentdemo.sections.notes.notes.NoteDao_Impl;
+import com.newlondonweb.tabbedfragmentdemo.sections.todo.todo.TodoDao;
+import com.newlondonweb.tabbedfragmentdemo.sections.todo.todo.TodoDao_Impl;
 import java.lang.IllegalStateException;
 import java.lang.Override;
 import java.lang.String;
@@ -85,7 +90,7 @@ public final class AppDataBase_Impl extends AppDataBase {
         final TableInfo _infoNoteTable = new TableInfo("note_table", _columnsNoteTable, _foreignKeysNoteTable, _indicesNoteTable);
         final TableInfo _existingNoteTable = TableInfo.read(_db, "note_table");
         if (! _infoNoteTable.equals(_existingNoteTable)) {
-          throw new IllegalStateException("Migration didn't properly handle note_table(com.newlondonweb.tabbedfragmentdemo.notes.notes.Note).\n"
+          throw new IllegalStateException("Migration didn't properly handle note_table(com.newlondonweb.tabbedfragmentdemo.sections.notes.notes.Note).\n"
                   + " Expected:\n" + _infoNoteTable + "\n"
                   + " Found:\n" + _existingNoteTable);
         }
@@ -100,7 +105,7 @@ public final class AppDataBase_Impl extends AppDataBase {
         final TableInfo _infoTodoTable = new TableInfo("todo_table", _columnsTodoTable, _foreignKeysTodoTable, _indicesTodoTable);
         final TableInfo _existingTodoTable = TableInfo.read(_db, "todo_table");
         if (! _infoTodoTable.equals(_existingTodoTable)) {
-          throw new IllegalStateException("Migration didn't properly handle todo_table(com.newlondonweb.tabbedfragmentdemo.todo.todo.Todo).\n"
+          throw new IllegalStateException("Migration didn't properly handle todo_table(com.newlondonweb.tabbedfragmentdemo.sections.todo.todo.Todo).\n"
                   + " Expected:\n" + _infoTodoTable + "\n"
                   + " Found:\n" + _existingTodoTable);
         }

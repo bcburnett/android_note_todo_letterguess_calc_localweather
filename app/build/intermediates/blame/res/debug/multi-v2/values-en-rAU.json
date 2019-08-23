@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/home/brian/.gradle/caches/transforms-2/files-2.1/3f5eafae10ca672b86ab7ed214ed7ad9/jetified-navigation-ui-2.0.0/res/values-en-rAU/values-en-rAU.xml",

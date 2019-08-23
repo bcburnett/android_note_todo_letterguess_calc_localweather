@@ -43,7 +43,7 @@
         </provider>
 
         <activity
-            android:name="com.newlondonweb.tabbedfragmentdemo.MainActivity"
+            android:name="com.newlondonweb.tabbedfragmentdemo.ui.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>

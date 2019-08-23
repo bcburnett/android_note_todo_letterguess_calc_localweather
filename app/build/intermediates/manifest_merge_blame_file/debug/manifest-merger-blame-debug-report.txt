@@ -6,96 +6,96 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml
+8-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml
+9-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:6:5-65
-11-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:6:22-62
+11-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:6:5-65
+11-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:6:22-62
 12    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-12-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:7:5-80
-12-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:7:22-77
+12-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:7:5-80
+12-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:7:22-77
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:8:5-67
-13-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:8:22-64
+13-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:8:5-67
+13-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:8:22-64
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:9:5-81
-14-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:9:22-78
+14-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:9:5-81
+14-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:9:22-78
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:10:5-80
-15-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:10:22-77
+15-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:10:5-80
+15-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:10:22-77
 16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-16-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:11:5-81
-16-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:11:22-78
+16-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:11:5-81
+16-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:11:22-78
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:12:5-78
-17-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:12:22-76
+17-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:12:5-78
+17-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:12:22-76
 18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-18-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:13:5-75
-18-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:13:22-73
+18-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:13:5-75
+18-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:13:22-73
 19
 20    <uses-feature
-20-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:46:5-48:35
+20-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:46:5-48:35
 21        android:name="android.hardware.camera"
-21-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:47:9-47
+21-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:47:9-47
 22        android:required="true" />
-22-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:48:9-32
+22-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:48:9-32
 23
 24    <application
-24-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:15:5-45:19
+24-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:15:5-45:19
 25        android:allowBackup="true"
-25-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:16:9-35
+25-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:16:9-35
 26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 26-->[androidx.core:core:1.1.0-rc01] /home/brian/.gradle/caches/transforms-2/files-2.1/bc50bb9bda5b8a6d628b41cc413e1420/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
 27        android:debuggable="true"
 28        android:hardwareAccelerated="true"
-28-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:22:9-43
+28-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:22:9-43
 29        android:icon="@mipmap/ic_launcher"
-29-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:17:9-43
+29-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:17:9-43
 30        android:label="@string/app_name"
-30-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:18:9-41
+30-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:18:9-41
 31        android:roundIcon="@mipmap/ic_launcher_round"
-31-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:19:9-54
+31-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:19:9-54
 32        android:supportsRtl="true"
-32-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:20:9-35
+32-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:20:9-35
 33        android:testOnly="true"
 34        android:theme="@style/AppTheme" >
-34-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:21:9-40
+34-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:21:9-40
 35        <provider
 36            android:name="androidx.core.content.FileProvider"
-36-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:26:13-62
+36-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:26:13-62
 37            android:authorities="com.newlondonweb.tabbedfragmentdemo.fileprovider"
-37-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:27:13-64
+37-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:27:13-64
 38            android:exported="false"
-38-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:28:13-37
+38-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:28:13-37
 39            android:grantUriPermissions="true" >
-39-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:29:13-47
+39-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:29:13-47
 40            <meta-data
-40-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:30:13-32:64
+40-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:30:13-32:64
 41                android:name="android.support.FILE_PROVIDER_PATHS"
-41-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:31:17-67
+41-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:31:17-67
 42                android:resource="@xml/file_paths" />
-42-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:32:17-51
+42-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:32:17-51
 43        </provider>
 44
 45        <activity
-45-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:35:9-44:20
-46            android:name="com.newlondonweb.tabbedfragmentdemo.MainActivity"
-46-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:36:13-41
+45-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:35:9-44:20
+46            android:name="com.newlondonweb.tabbedfragmentdemo.ui.MainActivity"
+46-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:36:13-44
 47            android:label="@string/app_name"
-47-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:37:13-45
+47-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:37:13-45
 48            android:theme="@style/AppTheme.NoActionBar" >
-48-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:38:13-56
+48-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:38:13-56
 49            <intent-filter>
-49-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:39:13-43:29
+49-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:39:13-43:29
 50                <action android:name="android.intent.action.MAIN" />
-50-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:40:17-69
-50-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:40:25-66
+50-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:40:17-69
+50-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:40:25-66
 51
 52                <category android:name="android.intent.category.LAUNCHER" />
-52-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:42:17-77
-52-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:42:27-74
+52-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:42:17-77
+52-->/home/brian/AndroidStudioProjects/TabbedFragmentWorkingTest/app/src/main/AndroidManifest.xml:42:27-74
 53            </intent-filter>
 54        </activity>
 55

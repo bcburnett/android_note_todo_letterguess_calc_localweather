@@ -4,10 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.newlondonweb.tabbedfragmentdemo.notes.notes.Note
-import com.newlondonweb.tabbedfragmentdemo.notes.notes.NoteDao
-import com.newlondonweb.tabbedfragmentdemo.todo.todo.Todo
-import com.newlondonweb.tabbedfragmentdemo.todo.todo.TodoDao
+import com.newlondonweb.tabbedfragmentdemo.sections.notes.notes.Note
+import com.newlondonweb.tabbedfragmentdemo.sections.notes.notes.NoteDao
+import com.newlondonweb.tabbedfragmentdemo.sections.todo.todo.Todo
+import com.newlondonweb.tabbedfragmentdemo.sections.todo.todo.TodoDao
 
 @Database(entities = [Note::class, Todo::class], version = 3,exportSchema = false)
 abstract class AppDataBase : RoomDatabase() {
@@ -30,11 +30,6 @@ abstract class AppDataBase : RoomDatabase() {
                     .build()
                 return INSTANCE as AppDataBase
             }
-
-
         }
-
     }
-
-
 }

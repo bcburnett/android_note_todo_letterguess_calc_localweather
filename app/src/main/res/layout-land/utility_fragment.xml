@@ -5,7 +5,7 @@
     android:id="@+id/cl_camFrag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".utility.UtilityFragment">
+    tools:context=".sections.utility.UtilityFragment">
 
     <Button
         android:id="@+id/btn_Record"

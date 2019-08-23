@@ -7,32 +7,32 @@
 
     <fragment
         android:id="@+id/noteFragment"
-        android:name="com.newlondonweb.tabbedfragmentdemo.notes.NoteFragment"
+        android:name="com.newlondonweb.tabbedfragmentdemo.sections.notes.NoteFragment"
         android:label="frag1_fragment"
         tools:layout="@layout/frag1_fragment" />
     <fragment
         android:id="@+id/wordGuessFragment"
-        android:name="com.newlondonweb.tabbedfragmentdemo.game.WordGuessFragment"
+        android:name="com.newlondonweb.tabbedfragmentdemo.sections.game.WordGuessFragment"
         android:label="fragment_frag2"
         tools:layout="@layout/fragment_frag2" />
     <fragment
         android:id="@+id/calcFragment"
-        android:name="com.newlondonweb.tabbedfragmentdemo.calc.CalcFragment"
+        android:name="com.newlondonweb.tabbedfragmentdemo.sections.calc.CalcFragment"
         android:label="frag3_fragment"
         tools:layout="@layout/frag3_fragment" />
     <fragment
         android:id="@+id/toDoFrag"
-        android:name="com.newlondonweb.tabbedfragmentdemo.todo.ToDoFrag"
+        android:name="com.newlondonweb.tabbedfragmentdemo.sections.todo.ToDoFrag"
         android:label="fragment_to_do"
         tools:layout="@layout/fragment_to_do" />
     <fragment
         android:id="@+id/weatherFragment"
-        android:name="com.newlondonweb.tabbedfragmentdemo.weather.WeatherFragment"
+        android:name="com.newlondonweb.tabbedfragmentdemo.sections.weather.WeatherFragment"
         android:label="fragment_weather"
         tools:layout="@layout/fragment_weather" />
     <fragment
         android:id="@+id/utilityFragment"
-        android:name="com.newlondonweb.tabbedfragmentdemo.utility.UtilityFragment"
+        android:name="com.newlondonweb.tabbedfragmentdemo.sections.utility.UtilityFragment"
         android:label="utility_fragment"
         tools:layout="@layout/utility_fragment" />
     <navigation
@@ -40,7 +40,7 @@
         app:startDestination="@id/mainActivity" >
         <activity
             android:id="@+id/mainActivity"
-            android:name="com.newlondonweb.tabbedfragmentdemo.MainActivity"
+            android:name="com.newlondonweb.tabbedfragmentdemo.ui.MainActivity"
             android:label="activity_main"
             tools:layout="@layout/activity_main" />
         <action
