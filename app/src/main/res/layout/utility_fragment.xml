@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="3dp"
     android:paddingRight="3dp"
-    tools:context=".ui.main.fragments.UtilityFragment">
+    tools:context=".utility.UtilityFragment">
 
     <ImageView
         android:id="@+id/iv_cam"

@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.fragments.ToDoFrag">
+    tools:context=".todo.ToDoFrag">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_Todos"

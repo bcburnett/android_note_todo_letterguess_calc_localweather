@@ -5,7 +5,7 @@
     android:id="@+id/frag2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.fragments.WordGuessFragment">
+    tools:context=".game.WordGuessFragment">
 
     <ImageView
         android:id="@+id/iv_speach"
@@ -94,7 +94,7 @@
         app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".ui.main.fragments.WordGuessFragment">
+        tools:context=".game.WordGuessFragment">
 
         <Button
             android:id="@+id/V"

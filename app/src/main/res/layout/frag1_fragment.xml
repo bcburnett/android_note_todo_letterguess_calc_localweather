@@ -5,7 +5,7 @@
     android:id="@+id/constraintlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.fragments.NoteFragment">
+    tools:context=".notes.NoteFragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_Notes"

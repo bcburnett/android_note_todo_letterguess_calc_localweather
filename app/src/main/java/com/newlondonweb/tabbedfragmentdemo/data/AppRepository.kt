@@ -1,10 +1,10 @@
 package com.newlondonweb.tabbedfragmentdemo.data
 
 import androidx.lifecycle.LiveData
-import com.newlondonweb.tabbedfragmentdemo.data.notes.Note
-import com.newlondonweb.tabbedfragmentdemo.data.notes.NoteDao
-import com.newlondonweb.tabbedfragmentdemo.data.todo.Todo
-import com.newlondonweb.tabbedfragmentdemo.data.todo.TodoDao
+import com.newlondonweb.tabbedfragmentdemo.notes.notes.Note
+import com.newlondonweb.tabbedfragmentdemo.notes.notes.NoteDao
+import com.newlondonweb.tabbedfragmentdemo.todo.todo.Todo
+import com.newlondonweb.tabbedfragmentdemo.todo.todo.TodoDao
 
 class AppRepository(private val noteDao: NoteDao, private val todoDao: TodoDao) {
 

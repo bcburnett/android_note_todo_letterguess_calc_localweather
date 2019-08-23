@@ -4,10 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.newlondonweb.tabbedfragmentdemo.data.notes.Note
-import com.newlondonweb.tabbedfragmentdemo.data.notes.NoteDao
-import com.newlondonweb.tabbedfragmentdemo.data.todo.Todo
-import com.newlondonweb.tabbedfragmentdemo.data.todo.TodoDao
+import com.newlondonweb.tabbedfragmentdemo.notes.notes.Note
+import com.newlondonweb.tabbedfragmentdemo.notes.notes.NoteDao
+import com.newlondonweb.tabbedfragmentdemo.todo.todo.Todo
+import com.newlondonweb.tabbedfragmentdemo.todo.todo.TodoDao
 
 @Database(entities = [Note::class, Todo::class], version = 3,exportSchema = false)
 abstract class AppDataBase : RoomDatabase() {
