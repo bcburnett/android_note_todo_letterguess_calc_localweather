@@ -1,11 +1,13 @@
 # android tabbed fragment app. 
-# notes, 
-# todo, 
-# Letter Guess game, 
-# calculator, 
-# local weather
+
+## notes, 
+## todo, 
+## Letter Guess game, 
+## calculator, 
+## local weather
 
 ## bcburnett/android_note_todo_letterguess_calc_localweather
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
