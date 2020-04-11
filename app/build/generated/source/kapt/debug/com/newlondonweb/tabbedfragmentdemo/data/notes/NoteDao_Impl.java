@@ -25,18 +25,18 @@ import kotlin.coroutines.Continuation;
 public final class NoteDao_Impl implements NoteDao {
   private final RoomDatabase __db;
 
-  private final EntityInsertionAdapter __insertionAdapterOfNote;
+  private final EntityInsertionAdapter<Note> __insertionAdapterOfNote;
 
-  private final EntityDeletionOrUpdateAdapter __deletionAdapterOfNote;
+  private final EntityDeletionOrUpdateAdapter<Note> __deletionAdapterOfNote;
 
-  private final EntityDeletionOrUpdateAdapter __updateAdapterOfNote;
+  private final EntityDeletionOrUpdateAdapter<Note> __updateAdapterOfNote;
 
   public NoteDao_Impl(RoomDatabase __db) {
     this.__db = __db;
     this.__insertionAdapterOfNote = new EntityInsertionAdapter<Note>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `note_table`(`id`,`title`,`description`,`image`,`priority`) VALUES (nullif(?, 0),?,?,?,?)";
+        return "INSERT OR ABORT INTO `note_table` (`id`,`title`,`description`,`image`,`priority`) VALUES (nullif(?, 0),?,?,?,?)";
       }
 
       @Override
@@ -159,7 +159,7 @@ public final class NoteDao_Impl implements NoteDao {
     return __db.getInvalidationTracker().createLiveData(new String[]{"note_table"}, false, new Callable<List<Note>>() {
       @Override
       public List<Note> call() throws Exception {
-        final Cursor _cursor = DBUtil.query(__db, _statement, false);
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");

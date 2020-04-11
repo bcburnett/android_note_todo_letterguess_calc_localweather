@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/brian/archive/AndroidStudioProjects/nav-app/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/home/brian/.gradle/caches/transforms-2/files-2.1/2c6fc9a823c0a777a41ca9737466f9e4/appcompat-1.1.0-rc01/res/values-night-v8/values-night-v8.xml",
+                    "source": "/home/brian/.gradle/caches/transforms-2/files-2.1/e1e0eeb16368edd90d76119877fa7e37/appcompat-1.2.0-beta01/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

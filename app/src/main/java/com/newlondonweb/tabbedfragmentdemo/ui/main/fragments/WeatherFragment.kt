@@ -27,8 +27,14 @@ import java.util.*
  * A simple [Fragment] subclass.
  */
 class WeatherFragment : Fragment() {
+
     companion object {
-        fun newInstance() = WeatherFragment()
+        @Volatile
+        private var INSTANCE: WeatherFragment? = null
+        fun getInstance(): WeatherFragment {
+            if(INSTANCE == null) INSTANCE=WeatherFragment()
+            return INSTANCE as WeatherFragment
+        }
     }
 
     private val connectivityManager =

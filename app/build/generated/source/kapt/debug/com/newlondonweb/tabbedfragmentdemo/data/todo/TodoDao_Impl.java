@@ -25,18 +25,18 @@ import kotlin.coroutines.Continuation;
 public final class TodoDao_Impl implements TodoDao {
   private final RoomDatabase __db;
 
-  private final EntityInsertionAdapter __insertionAdapterOfTodo;
+  private final EntityInsertionAdapter<Todo> __insertionAdapterOfTodo;
 
-  private final EntityDeletionOrUpdateAdapter __deletionAdapterOfTodo;
+  private final EntityDeletionOrUpdateAdapter<Todo> __deletionAdapterOfTodo;
 
-  private final EntityDeletionOrUpdateAdapter __updateAdapterOfTodo;
+  private final EntityDeletionOrUpdateAdapter<Todo> __updateAdapterOfTodo;
 
   public TodoDao_Impl(RoomDatabase __db) {
     this.__db = __db;
     this.__insertionAdapterOfTodo = new EntityInsertionAdapter<Todo>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `todo_table`(`id`,`title`,`description`,`priority`,`done`) VALUES (nullif(?, 0),?,?,?,?)";
+        return "INSERT OR ABORT INTO `todo_table` (`id`,`title`,`description`,`priority`,`done`) VALUES (nullif(?, 0),?,?,?,?)";
       }
 
       @Override
@@ -155,7 +155,7 @@ public final class TodoDao_Impl implements TodoDao {
     return __db.getInvalidationTracker().createLiveData(new String[]{"todo_table"}, false, new Callable<List<Todo>>() {
       @Override
       public List<Todo> call() throws Exception {
-        final Cursor _cursor = DBUtil.query(__db, _statement, false);
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");

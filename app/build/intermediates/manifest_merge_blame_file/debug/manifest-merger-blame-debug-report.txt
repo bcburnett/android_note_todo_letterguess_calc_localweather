@@ -6,145 +6,165 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml
+8-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml
+9-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.CAMERA" />
-11-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:6:5-65
-11-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:6:22-62
+11-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:6:5-65
+11-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:6:22-62
 12    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
-12-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:7:5-80
-12-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:7:22-77
+12-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:7:5-80
+12-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:7:22-77
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:8:5-67
-13-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:8:22-64
+13-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:8:5-67
+13-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:8:22-64
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:9:5-81
-14-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:9:22-78
+14-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:9:5-81
+14-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:9:22-78
 15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:10:5-80
-15-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:10:22-77
+15-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:10:5-80
+15-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:10:22-77
 16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-16-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:11:5-81
-16-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:11:22-78
-17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:12:5-78
-17-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:12:22-76
-18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-18-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:13:5-75
-18-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:13:22-73
-19
-20    <uses-feature
-20-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:46:5-48:35
-21        android:name="android.hardware.camera"
-21-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:47:9-47
-22        android:required="true" />
-22-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:48:9-32
-23
-24    <application
-24-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:15:5-45:19
-25        android:allowBackup="true"
-25-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:16:9-35
-26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-26-->[androidx.core:core:1.1.0-rc01] /home/brian/.gradle/caches/transforms-2/files-2.1/bc50bb9bda5b8a6d628b41cc413e1420/core-1.1.0-rc01/AndroidManifest.xml:24:18-86
-27        android:debuggable="true"
-28        android:hardwareAccelerated="true"
-28-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:22:9-43
-29        android:icon="@mipmap/ic_launcher"
-29-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:17:9-43
-30        android:label="@string/app_name"
-30-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:18:9-41
-31        android:roundIcon="@mipmap/ic_launcher_round"
-31-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:19:9-54
-32        android:supportsRtl="true"
-32-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:20:9-35
-33        android:testOnly="true"
-34        android:theme="@style/AppTheme" >
-34-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:21:9-40
-35        <provider
-36            android:name="androidx.core.content.FileProvider"
-36-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:26:13-62
-37            android:authorities="com.newlondonweb.tabbedfragmentdemo.fileprovider"
-37-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:27:13-64
-38            android:exported="false"
-38-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:28:13-37
-39            android:grantUriPermissions="true" >
-39-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:29:13-47
-40            <meta-data
-40-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:30:13-32:64
-41                android:name="android.support.FILE_PROVIDER_PATHS"
-41-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:31:17-67
-42                android:resource="@xml/file_paths" />
-42-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:32:17-51
-43        </provider>
-44
-45        <activity
-45-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:35:9-44:20
-46            android:name="com.newlondonweb.tabbedfragmentdemo.MainActivity"
-46-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:36:13-41
-47            android:label="@string/app_name"
-47-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:37:13-45
-48            android:theme="@style/AppTheme.NoActionBar" >
-48-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:38:13-56
-49            <intent-filter>
-49-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:39:13-43:29
-50                <action android:name="android.intent.action.MAIN" />
-50-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:40:17-69
-50-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:40:25-66
-51
-52                <category android:name="android.intent.category.LAUNCHER" />
-52-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:42:17-77
-52-->/home/brian/AndroidStudioProjects/TabbedFragmentWorking/app/src/main/AndroidManifest.xml:42:27-74
-53            </intent-filter>
-54        </activity>
-55
-56        <provider
-56-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:25:9-30:43
-57            android:name="androidx.camera.camera2.impl.Camera2Initializer"
-57-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:26:13-75
-58            android:authorities="com.newlondonweb.tabbedfragmentdemo.camerax-init"
-58-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:27:13-64
-59            android:exported="false"
-59-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:28:13-37
-60            android:initOrder="100"
-60-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:29:13-36
-61            android:multiprocess="true" />
-61-->[androidx.camera:camera-camera2:1.0.0-alpha04] /home/brian/.gradle/caches/transforms-2/files-2.1/4c4fdcd2fa60c18a7671c22e3e84532d/camera-camera2-1.0.0-alpha04/AndroidManifest.xml:30:13-40
-62
-63        <activity
-63-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-64-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-65            android:exported="false"
-65-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-66-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/446c781a0499877c2b1bd865ffa0836d/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+16-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:11:5-81
+16-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+17-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:12:5-79
+17-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:12:22-76
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:13:5-78
+18-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+19-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:14:5-75
+19-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:14:22-73
+20
+21    <!--
+22     The API key for Google Maps-based APIs is defined as a string resource.
+23     (See the file "res/values/google_maps_api.xml").
+24     Note that the API key is linked to the encryption key used to sign the APK.
+25     You need a different API key for each encryption key, including the release key that is used to
+26     sign the APK for publishing.
+27     You can define the keys for the debug and release targets in src/debug/ and src/release/.
+28    -->
+29    <meta-data
+29-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:24:5-26:51
+30        android:name="com.google.android.geo.API_KEY"
+30-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:25:9-54
+31        android:value="@string/google_maps_key" />
+31-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:26:9-48
+32
+33    <uses-feature
+33-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:59:5-61:35
+34        android:name="android.hardware.camera"
+34-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:60:9-47
+35        android:required="true" />
+35-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:61:9-32
+36    <uses-feature
+36-->[com.google.android.gms:play-services-maps:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d813b4a16a5e1b6c9fa6cd54fcb176b6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+37        android:glEsVersion="0x00020000"
+37-->[com.google.android.gms:play-services-maps:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d813b4a16a5e1b6c9fa6cd54fcb176b6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+38        android:required="true" />
+38-->[com.google.android.gms:play-services-maps:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d813b4a16a5e1b6c9fa6cd54fcb176b6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+39
+40    <application
+40-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:28:5-58:19
+41        android:allowBackup="true"
+41-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:29:9-35
+42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+42-->[androidx.core:core:1.3.0-beta01] /home/brian/.gradle/caches/transforms-2/files-2.1/0fa718aea2e99b8b626ead08d299298f/core-1.3.0-beta01/AndroidManifest.xml:24:18-86
+43        android:debuggable="true"
+44        android:hardwareAccelerated="true"
+44-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:35:9-43
+45        android:icon="@mipmap/ic_launcher"
+45-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:30:9-43
+46        android:label="@string/app_name"
+46-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:31:9-41
+47        android:roundIcon="@mipmap/ic_launcher_round"
+47-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:32:9-54
+48        android:supportsRtl="true"
+48-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:33:9-35
+49        android:testOnly="true"
+50        android:theme="@style/AppTheme" >
+50-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:34:9-40
+51        <provider
+52            android:name="androidx.core.content.FileProvider"
+52-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:39:13-62
+53            android:authorities="com.newlondonweb.tabbedfragmentdemo.fileprovider"
+53-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:40:13-64
+54            android:exported="false"
+54-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:41:13-37
+55            android:grantUriPermissions="true" >
+55-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:42:13-47
+56            <meta-data
+56-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:43:13-45:64
+57                android:name="android.support.FILE_PROVIDER_PATHS"
+57-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:44:17-67
+58                android:resource="@xml/file_paths" />
+58-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:45:17-51
+59        </provider>
+60
+61        <activity
+61-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:48:9-57:20
+62            android:name="com.newlondonweb.tabbedfragmentdemo.MainActivity"
+62-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:49:13-41
+63            android:label="@string/app_name"
+63-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:50:13-45
+64            android:theme="@style/AppTheme.NoActionBar" >
+64-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:51:13-56
+65            <intent-filter>
+65-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:52:13-56:29
+66                <action android:name="android.intent.action.MAIN" />
+66-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:53:17-69
+66-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:53:25-66
 67
-68        <meta-data
-68-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/dd6236fa64966faf26f76a19383ce51c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-69            android:name="com.google.android.gms.version"
-69-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/dd6236fa64966faf26f76a19383ce51c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-70            android:value="@integer/google_play_services_version" />
-70-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/dd6236fa64966faf26f76a19383ce51c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-71
-72        <service
-72-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d5a03764163cae7eddad16482bfc6546/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
-73            android:name="androidx.room.MultiInstanceInvalidationService"
-73-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d5a03764163cae7eddad16482bfc6546/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
-74            android:exported="false" />
-74-->[androidx.room:room-runtime:2.1.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d5a03764163cae7eddad16482bfc6546/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:55:17-77
+68-->/home/brian/archive/AndroidStudioProjects/nav-app/app/src/main/AndroidManifest.xml:55:27-74
+69            </intent-filter>
+70        </activity>
+71        <!-- Needs to be explicitly declared on P+ -->
+72        <uses-library
+72-->[com.google.android.gms:play-services-maps:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d813b4a16a5e1b6c9fa6cd54fcb176b6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+73            android:name="org.apache.http.legacy"
+73-->[com.google.android.gms:play-services-maps:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d813b4a16a5e1b6c9fa6cd54fcb176b6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+74            android:required="false" />
+74-->[com.google.android.gms:play-services-maps:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/d813b4a16a5e1b6c9fa6cd54fcb176b6/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
 75
-76        <provider
-76-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:25:9-29:43
-77            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-77-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:26:13-79
-78            android:authorities="com.newlondonweb.tabbedfragmentdemo.lifecycle-process"
-78-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:27:13-69
-79            android:exported="false"
-79-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:28:13-37
-80            android:multiprocess="true" />
-80-->[androidx.lifecycle:lifecycle-process:2.2.0-alpha03] /home/brian/.gradle/caches/transforms-2/files-2.1/3fd948c6c1ce03b38d85cfa85dbfc11d/lifecycle-process-2.2.0-alpha03/AndroidManifest.xml:29:13-40
-81    </application>
-82
-83</manifest>
+76        <activity
+76-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/c6117227c5a2111dd13be7c20e7120b6/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+77            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+77-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/c6117227c5a2111dd13be7c20e7120b6/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+78            android:exported="false"
+78-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/c6117227c5a2111dd13be7c20e7120b6/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+79-->[com.google.android.gms:play-services-base:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/c6117227c5a2111dd13be7c20e7120b6/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+80
+81        <meta-data
+81-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/acd837fecffc35b695e02abcd1ff9154/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+82            android:name="com.google.android.gms.version"
+82-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/acd837fecffc35b695e02abcd1ff9154/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+83            android:value="@integer/google_play_services_version" />
+83-->[com.google.android.gms:play-services-basement:17.0.0] /home/brian/.gradle/caches/transforms-2/files-2.1/acd837fecffc35b695e02abcd1ff9154/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+84
+85        <service
+85-->[androidx.room:room-runtime:2.2.5] /home/brian/.gradle/caches/transforms-2/files-2.1/a7497b05d382ad886677efc9065ef88f/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+86            android:name="androidx.room.MultiInstanceInvalidationService"
+86-->[androidx.room:room-runtime:2.2.5] /home/brian/.gradle/caches/transforms-2/files-2.1/a7497b05d382ad886677efc9065ef88f/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+87            android:directBootAware="true"
+87-->[androidx.room:room-runtime:2.2.5] /home/brian/.gradle/caches/transforms-2/files-2.1/a7497b05d382ad886677efc9065ef88f/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+88            android:exported="false" />
+88-->[androidx.room:room-runtime:2.2.5] /home/brian/.gradle/caches/transforms-2/files-2.1/a7497b05d382ad886677efc9065ef88f/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+89
+90        <provider
+90-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/brian/.gradle/caches/transforms-2/files-2.1/0cb84a9f6b2cae5c973ef025c366f9e5/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+91            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+91-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/brian/.gradle/caches/transforms-2/files-2.1/0cb84a9f6b2cae5c973ef025c366f9e5/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+92            android:authorities="com.newlondonweb.tabbedfragmentdemo.lifecycle-process"
+92-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/brian/.gradle/caches/transforms-2/files-2.1/0cb84a9f6b2cae5c973ef025c366f9e5/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+93            android:exported="false"
+93-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/brian/.gradle/caches/transforms-2/files-2.1/0cb84a9f6b2cae5c973ef025c366f9e5/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+94            android:multiprocess="true" />
+94-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/brian/.gradle/caches/transforms-2/files-2.1/0cb84a9f6b2cae5c973ef025c366f9e5/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+95    </application>
+96
+97</manifest>

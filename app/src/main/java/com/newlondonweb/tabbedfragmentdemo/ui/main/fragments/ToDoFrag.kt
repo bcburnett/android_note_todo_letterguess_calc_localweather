@@ -28,9 +28,16 @@ import kotlinx.coroutines.launch
 
 
 class ToDoFrag : Fragment() {
+
     companion object {
-        fun newInstance() = ToDoFrag()
+        @Volatile
+        private var INSTANCE: ToDoFrag? = null
+        fun getInstance(): ToDoFrag {
+            if(INSTANCE == null) INSTANCE=ToDoFrag()
+            return INSTANCE as ToDoFrag
+        }
     }
+
     private val vm: TodoViewModel by lazy {this.activity.let { ViewModelProvider(it!!).get(TodoViewModel::class.java)}}
     private val va: TodoAdapter =TodoAdapter(frag = this)
 

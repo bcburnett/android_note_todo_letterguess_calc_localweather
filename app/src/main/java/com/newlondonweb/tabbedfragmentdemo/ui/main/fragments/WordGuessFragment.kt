@@ -22,8 +22,14 @@ import java.util.*
 class WordGuessFragment : Fragment() {
 
     companion object {
-        fun newInstance() = WordGuessFragment()
+        @Volatile
+        private var INSTANCE: WordGuessFragment? = null
+        fun getInstance(): WordGuessFragment {
+            if(INSTANCE == null) INSTANCE=WordGuessFragment()
+            return INSTANCE as WordGuessFragment
+        }
     }
+
     private var speach = true
     private lateinit var mtts: TextToSpeech
 

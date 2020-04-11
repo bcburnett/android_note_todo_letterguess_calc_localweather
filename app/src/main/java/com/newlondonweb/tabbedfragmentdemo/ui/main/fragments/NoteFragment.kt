@@ -1,6 +1,7 @@
 package com.newlondonweb.tabbedfragmentdemo.ui.main.fragments
 
 import android.app.Activity
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.content.res.Resources
@@ -15,6 +16,7 @@ import android.widget.PopupWindow
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.FileProvider
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
@@ -38,10 +40,15 @@ import kotlinx.android.synthetic.main.layout_popup.view.et_priority as et_priori
 import kotlinx.android.synthetic.main.layout_popup.view.et_title as et_title1
 
 
-class NoteFragment : Fragment() {
+class NoteFragment : Fragment(), LifecycleOwner {
 
-    companion object {
-        fun newInstance() = NoteFragment()
+        companion object {
+        @Volatile
+        private var INSTANCE: NoteFragment? = null
+        fun getInstance(): NoteFragment {
+            if(INSTANCE == null) INSTANCE = NoteFragment()
+            return INSTANCE as NoteFragment
+        }
     }
 
 
@@ -90,9 +97,11 @@ class NoteFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == REQUEST_TAKE_PHOTO && resultCode == Activity.RESULT_OK) {
-            (File(vm.currentNote.value!!.image).exists()) && (File(vm.currentNote.value!!.image).delete())
-            SaveBitmap(mfile!!.absolutePath)
-                .execute()
+//            (File(vm.currentNote.value!!.image).exists()) && (File(vm.currentNote.value!!.image).delete())
+            mfile?.absolutePath?.let {
+                SaveBitmap(it)
+                    .execute()
+            }
             vm.viewModelScope.launch {
                 vm.update(
                     Note(
@@ -181,8 +190,7 @@ class NoteFragment : Fragment() {
                 mfile = File.createTempFile(
                     "JPEG_${SimpleDateFormat("yyyyMMdd_HHmmss", Locale.US).format(Date())}_",
                     ".webp",
-                    this.context!!.getExternalFilesDir(Environment.DIRECTORY_DCIM)
-                ).apply { currentPhotoPath = absolutePath }
+                    this.context!!.getExternalFilesDir(Environment.DIRECTORY_PICTURES)).apply { currentPhotoPath = absolutePath }
 
                 val photoURI: Uri = FileProvider.getUriForFile(
                     this.context!!,

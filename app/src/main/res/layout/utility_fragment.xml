@@ -5,142 +5,14 @@
     android:id="@+id/cl_camFrag"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="3dp"
-    android:paddingRight="3dp"
     tools:context=".ui.main.fragments.UtilityFragment">
 
-    <ImageView
-        android:id="@+id/iv_cam"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="8dp"
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btn_TakePicture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:text="@string/take_pic"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Call"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_cam" />
-
-    <Button
-        android:id="@+id/btn_Call"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:text="@string/call"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_TakePicture"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Recipe"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_TakePicture"
-        app:layout_constraintTop_toTopOf="@+id/btn_TakePicture" />
-
-    <Button
-        android:id="@+id/btn_Recipe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="Recipes"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_Call"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_Call"
-        app:layout_constraintTop_toTopOf="@+id/btn_Call" />
-
-    <Button
-        android:id="@+id/btn_BusMap"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/button"
-        android:text="@string/busmap"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toStartOf="@+id/btn_MusicPlayer"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_TakePicture" />
-
-    <Button
-        android:id="@+id/btn_MusicPlayer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="@string/musicPlayer"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_BusMap"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Record"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_BusMap"
-        app:layout_constraintTop_toTopOf="@+id/btn_BusMap" />
-
-    <Button
-        android:id="@+id/btn_Images"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:text="@string/imageGallery"
-        android:theme="@style/AppTheme"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Ss"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_Email"
-        app:layout_constraintTop_toTopOf="@+id/btn_Email" />
-
-    <Button
-        android:id="@+id/btn_Email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/button"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:text="@string/email"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toStartOf="@+id/btn_Images"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_BusMap" />
-
-    <Button
-        android:id="@+id/btn_Ss"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp"
-        android:text="@string/ss"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_Images"
-        app:layout_constraintTop_toTopOf="@+id/btn_Images" />
-
-    <Button
-        android:id="@+id/btn_Record"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button"
-        android:text="@string/record"
-        android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btn_MusicPlayer"
-        app:layout_constraintTop_toTopOf="@+id/btn_MusicPlayer" />
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

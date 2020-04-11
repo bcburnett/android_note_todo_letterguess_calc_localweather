@@ -3,15 +3,10 @@ package com.newlondonweb.tabbedfragmentdemo.viewModels
 import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
-import android.net.NetworkCapabilities
-import android.os.Build
 import android.widget.Button
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.android.volley.Request
-import com.android.volley.toolbox.JsonObjectRequest
-import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.newlondonweb.tabbedfragmentdemo.data.letters.Command
 import com.newlondonweb.tabbedfragmentdemo.data.letters.Phrases
@@ -24,7 +19,6 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
 
     private val connectivityManager =
         application.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
-
 
 
     //////////////////WORD GUESS///////////////////////////////////
@@ -66,7 +60,7 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
 
     //////////////////PUBLIC FUNCTIONS//////////////////
     //The user has entered a letter guess
-    fun doCheck(myguess: Button):Boolean {
+    fun doCheck(myguess: Button): Boolean {
         var b = false
         disabled.value?.add(myguess)
         val guess = myguess.tag.toString()
@@ -88,7 +82,7 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
         //check for wrong guess
         when {
             !secretPhrase.contains(guess) -> wrongGuesses.value = wrongGuesses.value!! + 1
-            else -> b=true
+            else -> b = true
         }
 
         //check if we lost
@@ -120,34 +114,13 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
 
     //populate phraseArray and secretPhrase with a new phrase
     private fun getPhrase() {
-        when {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
-                connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)?.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)!! ||
-                   connectivityManager.getNetworkCapabilities(connectivityManager.activeNetwork)?.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)!!
-            else
-                connectivityManager.activeNetworkInfo?.type == ConnectivityManager.TYPE_WIFI ||
-                    connectivityManager.activeNetworkInfo?.type == ConnectivityManager.TYPE_MOBILE
-            -> Volley.newRequestQueue(this.getApplication())
-                .also {
-                    it.add(
-                        JsonObjectRequest(
-                            Request.Method.GET,
-                            "http://brian.newlondonweb.com:8080/json/true",
-                            null,
-                            { setPhrase(jo = it)},
-                            { getPhraseFromClass() }
-                        )
-                    )
-                    it.start()
-                }
-            else -> getPhraseFromClass()
-        }
+        getPhraseFromClass()
     }
 
-    private fun setPhrase(jo:JSONObject){
+    private fun setPhrase(jo: JSONObject) {
         phraseArray.clear()
         Gson().fromJson(jo.toString(), Phrase::class.java).also {
-            if(it.phrase==null) {
+            if (it.phrase == null) {
                 getPhraseFromClass()
                 return
             }
@@ -190,8 +163,14 @@ class WordGuessViewModel(application: Application) : AndroidViewModel(applicatio
 
     inner class Letter(val letter: String) {
         var correct = false
-        init {if (letter.matches("[ .'?!,&-]".toRegex())) correct = true}
-        fun singleSpacedLetter():String = when{correct-> letter; else->"_"}
+
+        init {
+            if (letter.matches("[ .'?!,&-]".toRegex())) correct = true
+        }
+
+        fun singleSpacedLetter(): String = when {
+            correct -> letter; else -> "_"
+        }
     }
 
     inner class Phrase(var phrase: String? = null, var category: String? = null)
